@@ -1,14 +1,23 @@
 import FeatureCard from "../Card/FeatureCard";
 import SectionTitle from "../Common/SectionTitle";
+import { useState, useEffect } from "react";
 
 const Feature1 = () => {
+    const [gifSrc, setGifSrc] = useState("/assets/images/homePage/loading_lid.gif");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setGifSrc(`/assets/images/homePage/loading_lid.gif?${Date.now()}`);
+        }, 10000); // reset setiap 10 detik
+        return () => clearInterval(interval);
+    }, []);
     return (
         <section className="wcu-section section-padding fix">
             <div className="wcu-container-wrapper style1">
                 <div className="container">
                     <div className="section-title text-center mxw-685 mx-auto wow fadeInUp" data-wow-delay=".2s">
                         <SectionTitle
-                            SubTitle="Why using our app"
+                            SubTitle="Our Mission"
                             Title="Our app is great for individuals, startups and enterprises"
                         ></SectionTitle>                       
                     </div>
@@ -17,26 +26,23 @@ const Feature1 = () => {
                             <div className="col-xl-4 d-flex justify-content-center">
                                 <div className="wcu-content">
                                     <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_1.svg"
-                                        title="High usability"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        img="/assets/images/homePage/artwork_our_mision_1.png"
+                                        title="Digital Mastery"
+                                        content="Introducing and educating about the digital era business and staying updated."
                                     ></FeatureCard>
                                      <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_2.svg"
-                                        title="Action Reminder"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        img="/assets/images/homePage/artwork_our_mision_2.png"
+                                        title="Product Excellence"
+                                        content="Creating affordable, high-demand products that sell easily and boost profits."
                                     ></FeatureCard>    
-                                      <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_3.svg"
-                                        title="Merge Files"
-                                        content="There are many variations of passages of Lorem Ipsum"
-                                    ></FeatureCard> 
+                                      
                                 </div>
                             </div>
                             <div className="col-xl-4 d-flex justify-content-center">
                                 <div className="wcu-thumb wow fadeInUp" data-wow-delay=".2s">
-                                    <div className="main-thumb wow bounceInUp" data-wow-delay=".6s"><img
-                                            src="/assets/images/wcu/wcuThumb1_1.png" alt="thumb" /></div>
+                                    <div className="main-thumb wow bounceInUp" data-wow-delay=".6s">
+                                        <img src={gifSrc} alt="thumb" />
+                                    </div>
                                     <div className="shape"><img src="/assets/images/shape/wcuThumbShape1_1.png" alt="shape" />
                                     </div>
                                 </div>
@@ -44,20 +50,15 @@ const Feature1 = () => {
                             <div className="col-xl-4 d-flex justify-content-center justify-content-xl-end">
                                 <div className="wcu-content">
                                     <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_4.svg"
-                                        title="Free Live Chat"
-                                        content="There are many variations of passages of Lorem Ipsum"
-                                    ></FeatureCard>
-                                    <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_5.svg"
-                                        title="Social Share"
-                                        content="There are many variations of passages of Lorem Ipsum"
-                                    ></FeatureCard>                                                                          
-                                    <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_6.svg"
-                                        title="Custom Shortcuts"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        img="/assets/images/homePage/artwork_our_mision_3.png"
+                                        title="Shared Success"
+                                        content="Achieving healthier, more prosperous lives together while benefiting others."
                                     ></FeatureCard> 
+                                    <FeatureCard
+                                        img="/assets/images/homePage/artwork_our_mision_4.png"
+                                        title="Trust Building"
+                                        content="Creating an honest and trustworthy business to increase public trust."
+                                    ></FeatureCard>                                                                           
                                 </div>
                             </div>
                         </div>
