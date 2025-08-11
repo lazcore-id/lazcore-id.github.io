@@ -1,112 +1,107 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
-const Feature2 = () => {
+const Feature2 = ({ features }) => {
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const selectedFeature = features[selectedIndex];
+
+    const handleCardClick = (e, index) => {
+        setSelectedIndex(index);
+
+        // ripple effect
+        const card = e.currentTarget;
+        const ripple = document.createElement("span");
+        const rect = card.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+        ripple.className = "ripple";
+
+        const oldRipple = card.querySelector(".ripple");
+        if (oldRipple) oldRipple.remove();
+        card.appendChild(ripple);
+        ripple.addEventListener("animationend", () => ripple.remove());
+    };
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2 } // jeda antar anak
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    };
+
     return (
-        
         <section className="feature-section section-padding fix">
             <div className="container">
                 <div className="feature-wrapper style1">
                     <div className="row gy-5 gx-134">
-                        <div className="col-xl-6 order-2 order-xl-1">
-                            <div className="feature-content">
-                                <div className="section-title">
-                                    <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
-                                        Our Features <img src="/assets/images/icon/fireIcon.svg" alt="icon" />
+
+                        {/* KIRI - Grid card */}
+                        <div className="col-xl-6 order-1 order-xl-1">
+                            <div className="feature-grid">
+                                {features.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className={`feature-card ${selectedIndex === index ? "active" : ""}`}
+                                        onClick={(e) => handleCardClick(e, index)}
+                                    >
+                                        <img
+                                            src={selectedIndex === index ? item.imageGif : item.imagePng}
+                                            alt={item.title}
+                                        />
                                     </div>
-                                    <h2 className="title wow fadeInUp" data-wow-delay=".4s">Our features will help to improve
-                                        business</h2>
-                                    <p className="section-desc wow fadeInUp" data-wow-delay=".6s">There are many variations of
-                                        passages of Lorem Ipsum available,
-                                        but the majority have suffered alteration in some form, by injected humour, or
-                                        randomised words which do not look even slightly</p>
-                                </div>
-                                <Link className="theme-btn wow fadeInUp" data-wow-delay=".2s" to="/contact">Start
-                                    Collaborator <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        viewBox="0 0 16 16" fill="none">
-                                        <g clipPath="url(#clip0_91_29)">
-                                            <path
-                                                d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
-                                                fill="white" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_91_29">
-                                                <rect width="16" height="16" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </Link>
+                                ))}
                             </div>
                         </div>
-                        <div className="col-xl-6 order-1 order-xl-2">
-                            <div className="feature-box-wrapper">
-                                <div className="feature-box style1 child1">
-                                    <div className="feature-box-header wow fadeInUp" data-wow-delay=".2s">
-                                        <div className="content">
-                                            <h5>Software development</h5>
-                                            <p className="text">UX Research</p>
+
+                        {/* KANAN - Konten detail */}
+                        <div className="col-xl-6 order-2 order-xl-2">
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={selectedIndex} // agar animasi ulang saat ganti
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
+                                    variants={containerVariants}
+                                    className="feature-content"
+                                >
+                                    <motion.div className="section-title" variants={itemVariants}>
+                                        <div className="subtitle">
+                                            Our Service <img src="/assets/images/icon/fireIcon.svg" alt="icon" />
                                         </div>
-                                        <div className="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
-                                                viewBox="0 0 34 35" fill="none">
-                                                <circle cx="17" cy="17.5" r="16" stroke="#F1F1F1" strokeWidth="2" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className="feature-box-footer wow fadeInUp" data-wow-delay=".4s">
-                                        <div className="content">
-                                            <span className="day">Today</span>
-                                            <span className="time">07:02 AM</span>
-                                        </div>
-                                        <div className="shape"><img src="/assets/images/shape/featureProfileShape1_1.png"
-                                                alt="shape" /></div>
-                                    </div>
-                                </div>
-                                <div className="feature-box style1 child2">
-                                    <div className="feature-box-header wow fadeInUp" data-wow-delay=".6s">
-                                        <div className="content">
-                                            <h5>Design data & analytics</h5>
-                                            <p className="text">UX Research</p>
-                                        </div>
-                                        <div className="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
-                                                viewBox="0 0 34 35" fill="none">
-                                                <circle cx="17" cy="17.5" r="16" stroke="#F1F1F1" strokeWidth="2" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className="feature-box-footer wow fadeInUp" data-wow-delay=".6s">
-                                        <div className="content">
-                                            <span className="day">Today</span>
-                                            <span className="time">07:02 AM</span>
-                                        </div>
-                                        <div className="shape"><img src="/assets/images/shape/featureProfileShape1_1.png"
-                                                alt="shape" /></div>
-                                    </div>
-                                </div>
-                                <div className="feature-box style1 wow fadeInUp" data-wow-delay=".6s">
-                                    <div className="feature-box-header">
-                                        <div className="content">
-                                            <h5>Dedicated Support</h5>
-                                            <p className="text">UX Research</p>
-                                        </div>
-                                        <div className="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35"
-                                                viewBox="0 0 34 35" fill="none">
-                                                <circle cx="17" cy="17.5" r="16" stroke="#F1F1F1" strokeWidth="2" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className="feature-box-footer">
-                                        <div className="content">
-                                            <span className="day">Today</span>
-                                            <span className="time">07:02 AM</span>
-                                        </div>
-                                        <div className="shape"><img src="/assets/images/shape/featureProfileShape1_1.png"
-                                                alt="shape" /></div>
-                                    </div>
-                                </div>
-                            </div>
+                                    </motion.div>
+
+                                    <motion.h2 className="title" variants={itemVariants}>
+                                        {selectedFeature.title}
+                                    </motion.h2>
+
+                                    <motion.p className="section-desc" variants={itemVariants}>
+                                        {selectedFeature.description}
+                                    </motion.p>
+
+                                    <motion.div variants={itemVariants}>
+                                        <Link
+                                            className="theme-btn mt-5"
+                                            to={selectedFeature.link || "/contact"}
+                                        >
+                                            {selectedFeature.buttonText || "Learn More"}
+                                        </Link>
+                                    </motion.div>
+                                </motion.div>
+                            </AnimatePresence>
                         </div>
+
                     </div>
                 </div>
             </div>

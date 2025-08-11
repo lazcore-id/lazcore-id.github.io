@@ -1,7 +1,19 @@
 import parse from 'html-react-parser';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusimg,cusnumber,cuscontent,rating,ratingcon,img}) => {
+    const [gifSrc, setGifSrc] = useState(img);
+
+    useEffect(() => {
+        if (img?.toLowerCase().endsWith('.gif')) {
+        const interval = setInterval(() => {
+            setGifSrc(`${img}?_=${Date.now()}`);
+        }, 5000); // waktu autoplay ulang, ganti sesuai durasi GIF
+
+        return () => clearInterval(interval);
+        }
+    }, [img]);
     return (
         <section className="intro-section">
         <div className="intro-container-wrapper style1">
@@ -61,7 +73,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                             </svg>
                                         </Link>
                                     </div>
-                                    <div className="fancy-box-wrapper style1">
+                                    {/* <div className="fancy-box-wrapper style1">
                                         <div className="fancy-box style1 wow fadeInUp" data-wow-delay=".2s">
                                             <div className="item">
                                                 <img src={cusimg} alt="thumb" />
@@ -102,7 +114,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                                 {ratingcon}
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="col-xl-5 order-1 order-xl-2">
@@ -112,7 +124,7 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                                     <div className="thumbShape2"><img src="/assets/images/shape/introThumbShape1_2.png"
                                             alt="thumbShape" /></div>
                                     <img className="main-thumb img-custom-anim-right wow fadeInUp" data-wow-delay=".4s"
-                                        src={img} alt="thumb" />
+                                        src={gifSrc} alt="thumb" />
                                 </div>
                             </div>
                         </div>

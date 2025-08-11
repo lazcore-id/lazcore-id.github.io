@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img}) => {
     return (
-        <section className="cta-section">
+        <section className="cta-section mb-5">
             <div className="cta-container-wrapper style1">
                 <div className="container">
                     <div className="cta-wrapper style1  section-padding fix">
@@ -26,10 +26,10 @@ const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img}) => {
                                             <p className="section-desc text-white mxw-651 wow fadeInUp" data-wow-delay=".6s">
                                                 {content}</p>
                                         </div>
-                                        <Link className="playstore" to={btnurl1}><img
+                                        {/* <Link className="playstore" to={btnurl1}><img
                                                 src="/assets/images/cta/ctaplayStore1_1.png" alt="img" /></Link>
                                         <Link to={btnurl2}><img
-                                                src="/assets/images/cta/ctaAppleStore1_1.png" alt="img" /></Link>
+                                                src="/assets/images/cta/ctaAppleStore1_1.png" alt="img" /></Link> */}
                                     </div>
                                 </div>
                                 <div className="col-xl-4 order-1 order-xl-2">

@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const OurWorks = () => {
     return (
         <footer className="footer-section position-relative">
             <div className="footer-widgets-wrapper style1 fix">
-                <div className="shape1"><img src="/assets/images/shape/footerShape1_1.png" alt="shape" /></div>
+                {/* <div className="shape1"><img src="/assets/images/shape/footerShape1_1.png" alt="shape" /></div>
                 <div className="shape2"><img src="/assets/images/shape/footerShape1_2.png" alt="shape" /></div>
-                <div className="shape3"><img src="/assets/images/shape/footerShape1_3.png" alt="shape" /></div>
+                <div className="shape3"><img src="/assets/images/shape/footerShape1_3.png" alt="shape" /></div> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div className="single-footer-widget">
                                 <div className="widget-head">
                                     <Link to="/">
-                                        <img src="/assets/images/logo/lazcore_main_logo.png" alt="logo-img" />
+                                        <img src="/assets/images/logo/logo.svg" alt="logo-img" />
                                     </Link>
                                 </div>
                                 <div className="footer-content">
@@ -191,4 +191,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default OurWorks;
