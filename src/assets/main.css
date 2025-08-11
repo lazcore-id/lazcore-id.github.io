@@ -11387,7 +11387,7 @@ textarea.is-invalid {
   gap: 30px 50px;
   justify-content: center;
   position: relative;
-  background-image: url('/assets/images/shape/wcuThumbShape1_1.png');
+  background-image: url('/assets/images/homePage/icbg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11434,4 +11434,43 @@ textarea.is-invalid {
   max-width: 100px;
   max-height: 100px;
   object-fit: contain;
+}
+.feature-card {
+  position: relative;
+  overflow: hidden; /* supaya ripple tidak keluar dari card */
+}
+
+.feature-card .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  animation: ripple-effect 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.feature-content {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.feature-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr)); /* kolom fleksibel */
+    justify-content: space-between; /* biar padding berfungsi */
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
