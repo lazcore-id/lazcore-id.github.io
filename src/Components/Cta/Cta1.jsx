@@ -16,7 +16,7 @@ const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img}) => {
                         </div>
                         <div className="container">
                             <div className="row gy-5">
-                                <div className="col-xl-8 order-2 order-xl-1">
+                                <div className="col-xl-6 order-2 order-xl-1">
                                     <div className="cta-content">
                                         <div className="section-title">
                                             <div className="subtitle text-white bg2 wow fadeInUp" data-wow-delay=".2s">
@@ -32,7 +32,7 @@ const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img}) => {
                                                 src="/assets/images/cta/ctaAppleStore1_1.png" alt="img" /></Link> */}
                                     </div>
                                 </div>
-                                <div className="col-xl-4 order-1 order-xl-2">
+                                <div className="col-xl-6 order-1 order-xl-2">
                                     <div className="cta-thumb wow fadeInUp" data-wow-delay=".2s">
                                         <img src={img} alt="thumb" />
                                     </div>

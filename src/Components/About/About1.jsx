@@ -17,15 +17,15 @@ const About1 = ({img1,img2,subtitle,title,contens,content,FeatureList,btnname,bt
                                     <div className="thumbShape2 d-none d-xxl-block cir36"><img
                                             src="/assets/images/shape/aboutThumbShape1_2.png" alt="shape" /></div>
                                     <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y"><img
-                                            src="/assets/images/shape/aboutThumbShape1_3.png" alt="shape" /></div>
+                                            src="/assets/images/homePage/artwork_about_us-ats.png" alt="shape" /></div>
                                     <div className="thumbShape4 d-none d-xxl-block cir36"><img
                                             src="/assets/images/shape/aboutThumbShape1_4.png" alt="shape" /></div>
                                     <div className="main-thumb">
                                         <img src={img1} alt="thumb" />
                                     </div>
-                                    {/* <div className="absolute-thumb float-bob-x">
+                                    <div className="absolute-thumb float-bob-x">
                                         <img src={img2} alt="thumb" />
-                                    </div> */}
+                                    </div>
     
                                 </div>
                             </div>

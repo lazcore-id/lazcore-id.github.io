@@ -12,10 +12,12 @@ import HeroBanner1 from "../Components/HeroBanner/HeroBanner1";
 import HowWork from "../Components/HowWork/HowWork";
 import Pricing1 from "../Components/Pricing/Pricing1";
 import Testimonial from "../Components/Testimonial/Testimonial";
+import ScrollToTop from "../Components/Common/ScrollToTop";
 
 const Home = () => {
     return (
         <div>
+            <ScrollToTop />
             <HeroBanner1
                 subtitle="<span>News!</span>Find Your Solution"
                 title="Accelerating Your Growth with Technology"
@@ -23,7 +25,7 @@ const Home = () => {
                 btnname="Get Started Now"
                 btnurl="/contact"
                 btntwo="Learn More"
-                btn2url="/about"
+                btn2url="/"
                 cusimg="/assets/images/homePage/ic_logo_head.png"
                 cusnumber="2,291"
                 cuscontent="Happy Customers"
@@ -34,7 +36,7 @@ const Home = () => {
             <Brand1></Brand1>
             <About1
                 img1="/assets/images/homePage/artwork_header.png"
-                img2="/assets/images/about/aboutThumb1_2.png"
+                img2="/assets/images/homePage/artwork_about_us-bwh.png"
                 subtitle="About Us"
                 title="Who We Are"
                 contens={[
@@ -51,7 +53,7 @@ const Home = () => {
                 //     "Start Your 14 Days Free Trials Today!",
                 // ]}                
                 btnname="Discover More"
-                btnurl="/about"
+                btnurl="/"
             ></About1>
             {/* <HowWork></HowWork> */}
             {/* <OurWorks></OurWorks> */}
@@ -68,7 +70,7 @@ const Home = () => {
                     "Strong Security",
                 ]}                 
                 btnname="Download App"
-                btnurl="/about"
+                btnurl="/"
             ></Choose1>
             <Feature1></Feature1>
             {/* <Counter1></Counter1> */}

@@ -4,7 +4,27 @@ import { Link } from 'react-router-dom';
 export default function Nav({ setMobileToggle }) {
   return (
     <ul className="cs_nav_list fw-medium">
-      <li className="menu-item-has-children">
+      <li>
+        <Link to="/" onClick={() => setMobileToggle(false)}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/" onClick={() => setMobileToggle(false)} className='disabled-link-nav'>
+          Project
+        </Link>
+      </li>
+      <li>
+        <Link to="/" onClick={() => setMobileToggle(false)} className='disabled-link-nav'>
+          Service
+        </Link>
+      </li>
+      <li>
+        <Link to="/" onClick={() => setMobileToggle(false)} className='disabled-link-nav'>
+          Blog
+        </Link>
+      </li>
+      {/* <li className="menu-item-has-children">
         <Link to="/">Home</Link>
         <DropDown>
           <ul>
@@ -25,8 +45,8 @@ export default function Nav({ setMobileToggle }) {
             </li>            
           </ul>
         </DropDown>
-      </li>
-      <li className="menu-item-has-children">
+      </li> */}
+      {/* <li className="menu-item-has-children">
         <Link to="#">Pages</Link>
         <DropDown>
           <ul>
@@ -62,9 +82,9 @@ export default function Nav({ setMobileToggle }) {
             </li>                         
           </ul>
         </DropDown>
-      </li>  
+      </li>   */}
 
-      <li className="menu-item-has-children">
+      {/* <li className="menu-item-has-children">
         <Link to="/project" onClick={() => setMobileToggle(false)}>
         Project
         </Link>
@@ -87,9 +107,9 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li> 
+      </li>  */}
       
-      <li className="menu-item-has-children">
+      {/* <li className="menu-item-has-children">
         <Link to="/service" onClick={() => setMobileToggle(false)}>
           Services
         </Link>
@@ -140,7 +160,7 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li>
+      </li> */}
       <li>
         <Link to="/contact" onClick={() => setMobileToggle(false)}>
           Contact
