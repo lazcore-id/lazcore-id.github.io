@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
+import parse from "html-react-parser";
 
-const About1 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) => {
+const About1 = ({img1,img2,subtitle,title,contens,content,FeatureList,btnname,btnurl}) => {
     return (
         
-        <section className="about-section fix">
+        <section className="about-section fix mt-5">
             <div className="about-container-wrapper style1">
                 <div className="container">
                     <div className="about-wrapper style1">
                         <div className="row gy-5 gx-60">
                             <div className="col-xl-6">
                                 <div className="about-thumb">
-                                    <div className="bg"></div>
+                                    {/* <div className="bg"></div> */}
                                     <div className="thumbShape1 d-none d-xxl-block cir36"><img
                                             src="/assets/images/shape/aboutThumbShape1_1.png" alt="shape" /></div>
                                     <div className="thumbShape2 d-none d-xxl-block cir36"><img
                                             src="/assets/images/shape/aboutThumbShape1_2.png" alt="shape" /></div>
                                     <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y"><img
-                                            src="/assets/images/shape/aboutThumbShape1_3.png" alt="shape" /></div>
+                                            src="/assets/images/homePage/artwork_about_us-ats.png" alt="shape" /></div>
                                     <div className="thumbShape4 d-none d-xxl-block cir36"><img
                                             src="/assets/images/shape/aboutThumbShape1_4.png" alt="shape" /></div>
                                     <div className="main-thumb">
@@ -35,13 +36,31 @@ const About1 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                             {subtitle} <img src="/assets/images/icon/fireIcon.svg" alt="icon" />
                                         </div>
                                         <h2 className="title wow fadeInUp" data-wow-delay=".4s">{title}</h2>
-                                        <p className="section-desc wow fadeInUp" data-wow-delay=".6s">{content}</p>
+                                        {contens?.map((item, index) => (
+                                            <p
+                                                key={index}
+                                                className="section-desc wow fadeInUp my-3"
+                                                data-wow-delay=".6s"
+                                            >
+                                                {parse(item, {
+                                                replace: (domNode) => {
+                                                    if (domNode.name === "strong") {
+                                                    return (
+                                                        <strong style={{ color: "black" }}>
+                                                        {domNode.children[0].data}
+                                                        </strong>
+                                                    );
+                                                    }
+                                                },
+                                                })}
+                                            </p>
+                                        ))}
                                     </div>
-                                    <ul className="checklist style1 wow fadeInUp" data-wow-delay=".2s">
+                                    {/* <ul className="checklist style1 wow fadeInUp" data-wow-delay=".2s">
                                     {FeatureList?.map((item, index) => (
                                         <li key={index}><img src="/assets/images/icon/checkmarkIcon.svg" alt="icon" /> {item}</li>
                                     ))}
-                                    </ul>
+                                    </ul> */}
                                     <Link className="theme-btn wow fadeInUp" data-wow-delay=".2s" to={btnurl}>{btnname}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                             fill="none">

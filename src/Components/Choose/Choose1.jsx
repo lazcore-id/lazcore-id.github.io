@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Choose1 = ({subtitle,title,content,FeatureList,FeatureList2,btnname,btnurl}) => {
     return (
         
-        <section className="advantage-section fix">
+        <section className="advantage-section fix mt-5">
             <div className="advantage-container-wrapper style1">
                 <div className="container">
                     <div className="advantage-wrapper style1 section-padding">
@@ -51,10 +51,10 @@ const Choose1 = ({subtitle,title,content,FeatureList,FeatureList2,btnname,btnurl
                                     <div className="advantage-thumb">
                                         <div className="thumb1 img-custom-anim-top wow fadeInDown" data-wow-delay=".8s"
                                             data-tilt data-tilt-max="10"><img
-                                                src="/assets/images/advantage/advantageThumb1_1.png" alt="thumb" /></div>
+                                                src="/assets/images/homePage/artwork_sosmed.png" alt="thumb" /></div>
                                         <div className="thumb2 img-custom-anim-right wow fadeInRight" data-wow-delay=".4s"
                                             data-tilt data-tilt-max="15"><img
-                                                src="/assets/images/advantage/advantageThumb1_2.png" alt="thumb" /></div>
+                                                src="/assets/images/homePage/artwork_our_vision.png" alt="thumb" /></div>
                                         <div className="shape1"><img src="/assets/images/shape/advanceThumbShape1_1.png"
                                                 alt="shape" /></div>
                                     </div>

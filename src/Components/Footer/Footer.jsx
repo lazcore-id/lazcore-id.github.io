@@ -13,7 +13,7 @@ const Footer = () => {
                             <div className="single-footer-widget">
                                 <div className="widget-head">
                                     <Link to="/">
-                                        <img src="/assets/images/logo/logo.svg" alt="logo-img" />
+                                        <img src="/assets/images/logo/lazcore_main_logo.png" alt="logo-img" />
                                     </Link>
                                 </div>
                                 <div className="footer-content">
@@ -54,22 +54,22 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/about">
+                                        <Link to="/about" className="disabled-link">
                                             About Us
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/project">
+                                        <Link to="/project" className="disabled-link">
                                             Integrations
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/service">
+                                        <Link to="/service" className="disabled-link">
                                             Features
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/pricing">
+                                        <Link to="/pricing" className="disabled-link">
                                             Pricing
                                         </Link>
                                     </li>
@@ -88,32 +88,32 @@ const Footer = () => {
                                 </div>
                                 <ul className="list-area">
                                     <li>
-                                        <Link to="/project">
+                                        <Link to="/project" className="disabled-link">
                                             Integrations
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/blog">
+                                        <Link to="/blog" className="disabled-link">
                                             Blog
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/contact">
+                                        <Link to="/contact" className="disabled-link">
                                             Contact Us
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/pricing">
+                                        <Link to="/pricing" className="disabled-link">
                                             Pricing
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/project/project-details">
+                                        <Link to="/project/project-details" className="disabled-link">
                                             Project details
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/team">
+                                        <Link to="/team" className="disabled-link">
                                             Our Team
                                         </Link>
                                     </li>
@@ -124,8 +124,8 @@ const Footer = () => {
                             <div className="single-footer-widget">
                                 <div className="contact-box">
                                     <div className="subtitle">Address</div>
-                                    <div className="widget-head">Ready to get started?</div>
-                                    <div className="text">It is a long established fact that a reader will be distracted layout.
+                                    <div className="widget-head">Let's Collaborate</div>
+                                    <div className="text">Ready to Explore your Potential Digital Ecosystem? Connect With Us Today
                                     </div>
                                     <div className="info">
                                         <div className="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="23"

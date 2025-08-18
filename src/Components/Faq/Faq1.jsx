@@ -26,8 +26,8 @@ const Faq1 = () => {
 
     const FaqContent = {
         Content:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly',
-        img1:'/assets/images/faq/faqThumb1_2.png',
-        img2:'/assets/images/faq/faqThumb1_1.png'
+        img1:'/assets/images/homePage/artami_preview.gif',
+        img2:'/assets/images/homePage/artwork_about_app.png'
       }
 
     return (
@@ -41,7 +41,7 @@ const Faq1 = () => {
                                 <div className="section-title">
                                     <SectionTitle
                                         SubTitle="FAQs"
-                                        Title="Frequently Ask Questions"
+                                        Title="See All Your Account & Add Invesments in one place"
                                     ></SectionTitle>                                    
                                     <p className="section-desc wow fadeInUp" data-wow-delay=".6s">{FaqContent.Content}</p>
                                 </div>
