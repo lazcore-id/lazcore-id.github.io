@@ -723,6 +723,7 @@ input[type=radio]:checked ~ label::before {
   }
   .intro-wrapper.style1 .container {
     max-width: 1450px;
+    padding : 0 45px;
   }
   .brand-slider-container-wrapper.style1 .container {
     max-width: 1450px;
@@ -774,6 +775,7 @@ input[type=radio]:checked ~ label::before {
   }
   .footer-widgets-wrapper.style1 .container {
     max-width: 1580px;
+    padding : 0 40px;
   }
   .footer-bottom.style1 .container {
     max-width: 1580px;
@@ -6316,7 +6318,7 @@ input.main-search-input::placeholder {
 }
 .about-wrapper.style1 .about-thumb .absolute-thumb {
   padding: 15px;
-  background: var(--white);
+  /* background: var(--white); */
   position: absolute;
   bottom: -10px;
   left: -10px;
@@ -11473,4 +11475,17 @@ textarea.is-invalid {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+}
+
+.disabled-link {
+  pointer-events: none; /* biar tidak bisa di-klik */
+  color: rgb(212, 212, 212) !important;          /* kasih warna abu */
+  cursor: not-allowed;  /* kasih cursor disable */
+  text-decoration: none;
+}
+.disabled-link-nav {
+  pointer-events: none; /* biar tidak bisa di-klik */
+  color: gray !important;          /* kasih warna abu */
+  cursor: not-allowed;  /* kasih cursor disable */
+  text-decoration: none;
 }

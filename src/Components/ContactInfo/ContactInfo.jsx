@@ -1,5 +1,38 @@
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 const ContactInfo = () => {
+    const validationSchema = yup.object().shape({
+        name: yup.string().required("Nama wajib diisi"),
+        email2: yup.string().email("Format email tidak valid").required("Email wajib diisi"),
+        message: yup.string().required("Pesan wajib diisi"),
+      });
+      const {
+        register,
+        handleSubmit,
+        formState: { errors },
+      } = useForm();
+    
+      const submitFormConnect = (data) => {
+        // format pesan WA
+        const message = `=========== TESTING
+Nama : ${data.name}
+Email : ${data.email}
+Pesan : ${data.message}
+==================`;
+    
+        // nomor tujuan WA
+        const phoneNumber = "6287811048482";
+    
+        // redirect ke WA
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+    
+        window.open(url, "_blank"); // buka di tab baru
+      };
+
     return (
         <div>
         <section className="contact-section section-padding fix">
@@ -99,7 +132,7 @@ const ContactInfo = () => {
                     <div className="col-xl-6">
                         <div className="contact-map">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57559.095682562875!2d88.60522403504652!3d25.6234028155105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb529bc7fc909b%3A0xd8f861ed9baf24de!2sDinajpur!5e0!3m2!1sen!2sbd!4v1729067103339!5m2!1sen!2sbd"
+                                src="https://www.google.com/maps?q=-6.9218295,107.6070623&hl=es;z=15&output=embed"
                                  loading="lazy"
                                 ></iframe>
                         </div>
@@ -107,39 +140,54 @@ const ContactInfo = () => {
                     <div className="col-xl-6">
                         <div className="contact-form style1">
                             <h2 className="contact-title">
-                                Ready to Get Started?
+                                Let's Collaborate
                             </h2>
-                            <p className="desc">Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit
-                                felis odio in turpis. Quisque rhoncus,</p>
+                            <p className="desc">Ready to Explore your Potential Digital Ecosystem? Connect With Us Today</p>
 
-                            <form id="contact-form" className="contact-form-items">
+                            <form id="contact-form" onSubmit={handleSubmit(submitFormConnect)} className="contact-form-items">
                                 <div className="row g-4">
                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div className="form-clt">
-                                            <span>Your name*</span>
-                                            <input type="text" name="name" id="name" placeholder="Your Name" />
-                                        </div>
+                                    <div className="form-clt">
+                                        <span>Your name*</span>
+                                        <input
+                                        type="text"
+                                        {...register("name")}
+                                        placeholder="Your Name"
+                                        />
+                                        {errors.name && <p className="text-red-500">{errors.name.message}</p>}
                                     </div>
+                                    </div>
+
                                     <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div className="form-clt">
-                                            <span>Your Email*</span>
-                                            <input type="text" name="email2" id="email2" placeholder="Your Email" />
-                                        </div>
+                                    <div className="form-clt">
+                                        <span>Your Email*</span>
+                                        <input
+                                        type="text"
+                                        {...register("email")}
+                                        placeholder="Your Email"
+                                        />
+                                        {errors.email2 && <p className="text-red-500">{errors.email2.message}</p>}
                                     </div>
+                                    </div>
+
                                     <div className="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
-                                        <div className="form-clt">
-                                            <span>Write Message*</span>
-                                            <textarea name="message" id="message"
-                                                placeholder="Write Message"></textarea>
-                                        </div>
+                                    <div className="form-clt">
+                                        <span>Write Message*</span>
+                                        <textarea
+                                        {...register("message")}
+                                        placeholder="Write Message"
+                                        ></textarea>
+                                        {errors.message && <p className="text-red-500">{errors.message.message}</p>}
                                     </div>
+                                    </div>
+
                                     <div className="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                                        <button type="submit" className="theme-btn">
-                                            Send Message <i className="bi bi-arrow-right"></i>
-                                        </button>
+                                    <button type="submit" className="theme-btn">
+                                        Send Message <i className="bi bi-arrow-right"></i>
+                                    </button>
                                     </div>
                                 </div>
-                            </form>
+                                </form>
                         </div>
                     </div>
                 </div>
