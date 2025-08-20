@@ -59,16 +59,16 @@ const Home = () => {
             {/* <OurWorks></OurWorks> */}
             <Choose1
                 subtitle="Our Vision"
-                title="Get Benefit By Using Trending Apps"
-                content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly"
-                FeatureList={[
-                    "Friendly Design",
-                    "SEO Optimized",
-                ]} 
-                FeatureList2={[
-                    "Cloud Storage",
-                    "Strong Security",
-                ]}                 
+                title="Building a Safe & Efficient Digital Ecosystem"
+                content="To be a consulting firm that delivers sustainable innovation to build a digital ecosystem that is safe, efficient, globally competitive, and provides real value to users and partners."
+                // FeatureList={[
+                //     "Friendly Design",
+                //     "SEO Optimized",
+                // ]} 
+                // FeatureList2={[
+                //     "Cloud Storage",
+                //     "Strong Security",
+                // ]}                 
                 btnname="Download App"
                 btnurl="/"
             ></Choose1>

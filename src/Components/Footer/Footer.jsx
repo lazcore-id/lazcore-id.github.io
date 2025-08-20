@@ -139,8 +139,7 @@ const Footer = () => {
                                             </svg>
                                         </div>
                                         <div className="link">
-                                            <a href="mailto:contact.tech@gmail.com">contact.tech@gmail.com</a> <br/>
-                                            <a href="mailto:info@Niotech.com">info@Niotech.com</a>
+                                            <a href="mailto:support@lazcore.id">support@lazcore.id</a> <br/>
                                         </div>
                                     </div>
                                     <div className="info">
@@ -162,8 +161,7 @@ const Footer = () => {
                                             </svg>
                                         </div>
                                         <div className="link">
-                                            <a href="tel:21314234323543">+880 123 654 789 00</a> <br/>
-                                            <a href="tel:35234523452345">+001 6520 698 00</a>
+                                            <a href="https://wa.me/628112333320" target="_blank">08112333320</a> <br/>
                                         </div>
                                     </div>
                                 </div>
