@@ -27,13 +27,13 @@ const Feature1 = () => {
                                 <div className="wcu-content">
                                     <FeatureCard
                                         img="/assets/images/homePage/artwork_our_mision_1.png"
-                                        title="Digital Mastery"
-                                        content="Introducing and educating about the digital era business and staying updated."
+                                        title="Sustainable Innovation"
+                                        content="Delivering sustainable innovation in every technology solution to address the ever-evolving digital challenges."
                                     ></FeatureCard>
                                      <FeatureCard
                                         img="/assets/images/homePage/artwork_our_mision_2.png"
-                                        title="Product Excellence"
-                                        content="Creating affordable, high-demand products that sell easily and boost profits."
+                                        title="Digital Ecosystem"
+                                        content="Building a safe and efficient digital ecosystem through reliable consulting, implementation, and system management services."
                                     ></FeatureCard>    
                                       
                                 </div>
@@ -51,13 +51,13 @@ const Feature1 = () => {
                                 <div className="wcu-content">
                                     <FeatureCard
                                         img="/assets/images/homePage/artwork_our_mision_3.png"
-                                        title="Shared Success"
-                                        content="Achieving healthier, more prosperous lives together while benefiting others."
+                                        title="Global Competitiveness"
+                                        content="Enhancing organizational global competitiveness with adaptive, modern, and internationally standardized technology strategies."
                                     ></FeatureCard> 
                                     <FeatureCard
                                         img="/assets/images/homePage/artwork_our_mision_4.png"
-                                        title="Trust Building"
-                                        content="Creating an honest and trustworthy business to increase public trust."
+                                        title="Real Value"
+                                        content="Providing real value to users and partners through solutions that are not only technically effective but also business-relevant."
                                     ></FeatureCard>                                                                           
                                 </div>
                             </div>

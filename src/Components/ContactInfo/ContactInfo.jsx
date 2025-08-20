@@ -54,7 +54,8 @@ Pesan : ${data.message}
                                     </svg>
                                 </div>
                                 <div className="title">Our Address</div>
-                                <a className="text" href="#">2464 Royal Ln. Mesa, New Jersey 45463.</a>
+                                <a className="text" href="#">Jl. Ngadinegaran Blok MJ III. No 144. Mantrijeron.
+                                Yogyakar ta- 55143, Indonesia</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +90,7 @@ Pesan : ${data.message}
                                     </svg>
                                 </div>
                                 <h3 className="title">
-                                    <a href="mailto:info@exmple.com"> info@exmple.com </a>
+                                    <a href="mailto:support@lazcore.id"> support@lazcore.id </a>
                                 </h3>
 
                                 <p className="text">Email us anytime for anykind ofquety.</p>
@@ -112,7 +113,7 @@ Pesan : ${data.message}
                                     </svg>
                                 </div>
                                 <h3 className="title">
-                                    <a href="tel:34534534543"> Hot: +208-666-0112 </a>
+                                    <a href="https://wa.me/628112333320" target="_blank"> Hot: +6281-1233-3320 </a>
                                 </h3>
 
                                 <p className="text">Call us any kind suppor,we will wait for it</p>
