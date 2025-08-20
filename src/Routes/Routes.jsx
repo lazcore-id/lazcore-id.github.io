@@ -37,59 +37,59 @@ export const router = createBrowserRouter([
         {
           path: "/service",
           element: <ServicePage></ServicePage>,
-      }, 
-      {
-        path: "/service/service-details",
-        element: <ServiceDetailPage></ServiceDetailPage>,
-      },
-      {
-        path: "/pricing",
-        element: <PricingPage></PricingPage>,
-      },    
-      {
-        path: "/project",
-        element: <ProjectPage1></ProjectPage1>,
-      },      
-      {
-        path: "/project2",
-        element: <ProjectPage2></ProjectPage2>,
-      },       
-      {
-        path: "/project/project-details",
-        element: <ProjectDetailPage></ProjectDetailPage>,
-      },
-      {
-        path: "/team",
-        element: <TeamPage></TeamPage>,
-      },
-      {
-        path: "/team/team-details",
-        element: <TeamDetailPage></TeamDetailPage>,
-      },
-      {
-        path: "/faq",
-        element: <FaqPage></FaqPage>,
-      },
-      {
-        path: "/blog",
-        element: <BlogPage></BlogPage>,
-      },
-      {
-        path: "/blog-sidebar",
-        element: <BlogStandardPage></BlogStandardPage>,
-      },
-      {
-        path: "/blog-left-sidebar",
-        element: <BlogLeftPage></BlogLeftPage>,
-      },
-      {
-        path: "/blog/blog-details",
-        element: <BlogDetaillsPage></BlogDetaillsPage>,
-      },
-      {
-        path: "/contact",
-        element: <ContactPage></ContactPage>,
-      },
+        }, 
+        {
+          path: "/service/service-details",
+          element: <ServiceDetailPage></ServiceDetailPage>,
+        },
+        {
+          path: "/pricing",
+          element: <PricingPage></PricingPage>,
+        },    
+        {
+          path: "/project",
+          element: <ProjectPage1></ProjectPage1>,
+        },      
+        {
+          path: "/project2",
+          element: <ProjectPage2></ProjectPage2>,
+        },       
+        {
+          path: "/project/project-details",
+          element: <ProjectDetailPage></ProjectDetailPage>,
+        },
+        {
+          path: "/team",
+          element: <TeamPage></TeamPage>,
+        },
+        {
+          path: "/team/team-details",
+          element: <TeamDetailPage></TeamDetailPage>,
+        },
+        {
+          path: "/faq",
+          element: <FaqPage></FaqPage>,
+        },
+        {
+          path: "/blog",
+          element: <BlogPage></BlogPage>,
+        },
+        {
+          path: "/blog-sidebar",
+          element: <BlogStandardPage></BlogStandardPage>,
+        },
+        {
+          path: "/blog-left-sidebar",
+          element: <BlogLeftPage></BlogLeftPage>,
+        },
+        {
+          path: "/blog/blog-details",
+          element: <BlogDetaillsPage></BlogDetaillsPage>,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage></ContactPage>,
+        },
 
       ],
     }, 
