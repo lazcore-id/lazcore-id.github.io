@@ -6,13 +6,13 @@ const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img}) => {
             <div className="cta-container-wrapper style1">
                 <div className="container">
                     <div className="cta-wrapper style1  section-padding fix">
-                        <div className="shape1 d-none d-xxl-block"><img src="/assets/images/shape/ctaShape1_1.png" alt="shape" />
+                        <div className="shape1 d-none d-xxl-block"><img src="/assets/images/newAssets/ctaShape1_1.png" alt="shape" />
                         </div>
-                        <div className="shape2 d-none d-xxl-block"><img src="/assets/images/shape/ctaShape1_2.png" alt="shape" />
+                        <div className="shape2 d-none d-xxl-block"><img src="/assets/images/newAssets/ctaShape1_2.png" alt="shape" />
                         </div>
-                        <div className="shape3 d-none d-xxl-block"><img src="/assets/images/shape/ctaShape1_3.png" alt="shape" />
+                        <div className="shape3 d-none d-xxl-block"><img src="/assets/images/newAssets/ctaShape1_3.png" alt="shape" />
                         </div>
-                        <div className="shape4 d-none d-xxl-block"><img src="/assets/images/shape/ctaShape1_4.png" alt="shape" />
+                        <div className="shape4 d-none d-xxl-block"><img src="/assets/images/newAssets/ctaShape1_4.png" alt="shape" />
                         </div>
                         <div className="container">
                             <div className="row gy-5">

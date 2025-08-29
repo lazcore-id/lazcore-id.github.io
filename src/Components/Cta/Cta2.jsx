@@ -9,8 +9,8 @@ const Cta2 = () => {
             </div>
         </div>
         <div className="service-container-wrapper style3  section-padding fix">
-            <div className="shape1 fix"><img src="/assets/images/shape/testimonialShape2_1.png" alt="shape" /></div>
-            <div className="shape2 fix"><img src="/assets/images/shape/testimonialShape2_2.png" alt="shape" /></div>
+            <div className="shape1 fix"><img src="/assets/images/newAssets/testimonialShape2_1.png" alt="shape" /></div>
+            <div className="shape2 fix"><img src="/assets/images/newAssets/testimonialShape2_2.png" alt="shape" /></div>
             <div className="container">
                 <div className="service-wrapper style3">
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">Join our team to create the best digital solutions.

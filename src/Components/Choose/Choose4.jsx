@@ -72,7 +72,7 @@ const Choose4 = () => {
                                     <h5>Traffic Growth</h5>
                                     <p className="text">Total traffic growth of 45%</p>
                                     <div className="shape-box">
-                                        <img src="/assets/images/shape/wcuThumbShape3_1.png" alt="shape" />
+                                        <img src="/assets/images/newAssets/wcuThumbShape3_1.png" alt="shape" />
                                         <div className="shape-content">
                                             <h6>Transaction</h6>
                                             <h3>86%</h3>

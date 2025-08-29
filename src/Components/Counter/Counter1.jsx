@@ -13,7 +13,7 @@ const Counter1 = () => {
             <div className="counter-container-wrapper style1">
                 <div className="container">
                     <div className="counter-wrapper style1 section-padding"
-                        data-background="/assets/images/shape/counterShape1_1.png">
+                        data-background="/assets/images/newAssets/counterShape1_1.png">
                         <div className="shape"></div>
                         <div className="container">
                             <div className="row gy-5">

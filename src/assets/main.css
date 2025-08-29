@@ -57,12 +57,12 @@ Description: Niotech - sass, App Landing Reactjs Template <
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #7444FD;
+  --theme: #12337C;
   --theme2: #F9F3EF;
   --theme3: #FAF8FF;
   --title: #282C32;
   --header: #282C32;
-  --orange: #e78c45;
+  --orange: #FC9318;
   --text: #858585;
   --text2: #cbcbcb;
   --border: #E6E6E6;
@@ -2613,7 +2613,7 @@ input[type=radio]:checked ~ label::before {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
-  background: rgba(116, 68, 253, 0.15);
+  background: #ff843126;
   color: var(--theme);
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
@@ -2625,7 +2625,7 @@ input[type=radio]:checked ~ label::before {
   border-radius: 100px;
 }
 .section-title .subtitle.bg2 {
-  background: rgba(255, 255, 255, 0.15);
+  background: #ff843126;
 }
 .section-title .subtitle img {
   margin-left: 3px;
@@ -2659,6 +2659,21 @@ input[type=radio]:checked ~ label::before {
 /* 12.Common */
 .brandSliderTwo .brand-logo {
   text-align: center;
+}
+
+.brand-logo {
+  width: 160px;       /* bisa disesuaikan */
+  height: 80px;       /* tinggi seragam */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.brand-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;  /* agar logo seragam, tidak ketarik */
 }
 
 .swiper-pagination-bullet {
@@ -5770,7 +5785,6 @@ input.main-search-input::placeholder {
 .intro-wrapper.style1 {
   position: relative;
   border-radius: 50px;
-  background: rgba(116, 68, 253, 0.06);
   margin-top: 40px;
 }
 @media (max-width: 767px) {
@@ -5830,7 +5844,7 @@ input.main-search-input::placeholder {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background: rgba(116, 68, 253, 0.15);
+  background: rgba(255, 132, 49, 0.15);
   backdrop-filter: blur(2px);
   color: var(--theme);
   font-family: "Urbanist", sans-serif;
@@ -6662,7 +6676,7 @@ input.main-search-input::placeholder {
 /* 20.Advantage */
 .advantage-wrapper.style1 {
   border-radius: 50px;
-  background: #FAF8FF;
+  background: #fffbf5;
 }
 .advantage-wrapper.style1 .advantage-content .checklist-wrapper {
   margin-bottom: 30px;
@@ -7096,7 +7110,7 @@ input.main-search-input::placeholder {
 .testimonial-wrapper.style1 {
   position: relative;
   border-radius: 50px;
-  background: rgba(116, 68, 253, 0.06);
+  background: #fffbf5;
 }
 .testimonial-wrapper.style1 .section-title {
   position: relative;
@@ -7107,13 +7121,11 @@ input.main-search-input::placeholder {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1;
 }
 .testimonial-wrapper.style1 .shape2 {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
 }
 .testimonial-wrapper.style1 .slider-pagination {
   max-width: 300px;

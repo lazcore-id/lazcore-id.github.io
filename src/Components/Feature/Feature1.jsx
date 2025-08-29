@@ -43,7 +43,7 @@ const Feature1 = () => {
                                     <div className="main-thumb wow bounceInUp" data-wow-delay=".6s">
                                         <img src={gifSrc} alt="thumb" />
                                     </div>
-                                    <div className="shape"><img src="/assets/images/shape/wcuThumbShape1_1.png" alt="shape" />
+                                    <div className="shape"><img src="/assets/images/newAssets/wcuThumbShape1_1.png" alt="shape" />
                                     </div>
                                 </div>
                             </div>

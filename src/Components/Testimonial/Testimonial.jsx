@@ -42,8 +42,8 @@ const Testimonial = () => {
             <div className="testimonial-container-wrapper style1">
                 <div className="container">
                     <div className="testimonial-wrapper style1 section-padding fix">
-                        <div className="shape1"><img src="/assets/images/shape/testimonialShape1_1.png" alt="shape" /></div>
-                        <div className="shape2"><img src="/assets/images/shape/testimonialShape1_2.png" alt="shape" /></div>
+                        <div className="shape1"><img src="/assets/images/newAssets/testimonialShape1_1.png" alt="shape" /></div>
+                        <div className="shape2"><img src="/assets/images/newAssets/testimonialShape1_2.png" alt="shape" /></div>
                         <div className="container">
                             <div className="section-title text-center mxw-685 mx-auto">
                                 <SectionTitle

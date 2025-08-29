@@ -49,8 +49,8 @@ const Testimonial2 = () => {
         <div className="testimonial-container-wrapper style2">
             <div className="container">
                 <div className="testimonial-wrapper style2 fix">
-                    <div className="shape1"><img src="/assets/images/shape/testimonialShape2_1.png" alt="shape" /></div>
-                    <div className="shape2"><img src="/assets/images/shape/testimonialShape2_2.png" alt="shape" /></div>
+                    <div className="shape1"><img src="/assets/images/newAssets/testimonialShape2_1.png" alt="shape" /></div>
+                    <div className="shape2"><img src="/assets/images/newAssets/testimonialShape2_2.png" alt="shape" /></div>
                     <div className="container">
                         <div className="section-title-wrapper style1">
                             <div className="row d-flex align-items-center">

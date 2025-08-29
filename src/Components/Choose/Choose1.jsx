@@ -55,7 +55,7 @@ const Choose1 = ({subtitle,title,content,FeatureList,FeatureList2,btnname,btnurl
                                         <div className="thumb2 img-custom-anim-right wow fadeInRight" data-wow-delay=".4s"
                                             data-tilt data-tilt-max="15"><img
                                                 src="/assets/images/homePage/artwork_our_vision.png" alt="thumb" /></div>
-                                        <div className="shape1"><img src="/assets/images/shape/advanceThumbShape1_1.png"
+                                        <div className="shape1"><img src="/assets/images/newAssets/advanceThumbShape1_1.png"
                                                 alt="shape" /></div>
                                     </div>
                                 </div>

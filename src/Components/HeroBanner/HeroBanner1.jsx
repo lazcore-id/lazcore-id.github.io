@@ -19,13 +19,13 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
         <div className="intro-container-wrapper style1">
             <div className="container">
                 <div className="intro-wrapper style1 fix">
-                    <div className="shape1"><img src="/assets/images/shape/introShape1_1.png" alt="shape" /></div>
-                    <div className="shape2"><img src="/assets/images/shape/introShape1_2.png" alt="shape" /></div>
+                    <div className="shape1"><img src="/assets/images/newAssets/introShape1_1.png" alt="shape" /></div>
+                    <div className="shape2"><img src="/assets/images/newAssets/introShape1_2.png" alt="shape" /></div>
                     <div className="shape3 d-none d-xxl-block cir36"><img src="assets/images/shape/introShape1_3.png"
                             alt="shape" /></div>
-                    <div className="shape4 d-none d-xxl-block cir36"><img src="/assets/images/shape/introShape1_4.png"
+                    <div className="shape4 d-none d-xxl-block cir36"><img src="/assets/images/newAssets/introShape1_4.png"
                             alt="shape" /></div>
-                    <div className="shape5 d-none d-xxl-block cir36"><img src="/assets/images/shape/introShape1_5.png"
+                    <div className="shape5 d-none d-xxl-block cir36"><img src="/assets/images/newAssets/introShape1_5.png"
                             alt="shape" /></div>
                     <div className="container">
                         <div className="row">
@@ -119,9 +119,9 @@ const HeroBanner1 = ({subtitle,title,content,btnname,btnurl,btntwo,btn2url,cusim
                             </div>
                             <div className="col-xl-5 order-1 order-xl-2">
                                 <div className="intro-thumb">
-                                    <div className="thumbShape1"><img src="/assets/images/shape/introThumbShape1_1.png"
+                                    <div className="thumbShape1"><img src="/assets/images/newAssets/introThumbShape1_1.png"
                                             alt="thumbShape" /></div>
-                                    <div className="thumbShape2"><img src="/assets/images/shape/introThumbShape1_2.png"
+                                    <div className="thumbShape2"><img src="/assets/images/newAssets/introThumbShape1_2.png"
                                             alt="thumbShape" /></div>
                                     <img className="main-thumb img-custom-anim-right wow fadeInUp" data-wow-delay=".4s"
                                         src={gifSrc} alt="thumb" />

@@ -13,13 +13,13 @@ const About1 = ({img1,img2,subtitle,title,contens,content,FeatureList,btnname,bt
                                 <div className="about-thumb">
                                     {/* <div className="bg"></div> */}
                                     <div className="thumbShape1 d-none d-xxl-block cir36"><img
-                                            src="/assets/images/shape/aboutThumbShape1_1.png" alt="shape" /></div>
+                                            src="/assets/images/newAssets/aboutThumbShape1_1.png" alt="shape" /></div>
                                     <div className="thumbShape2 d-none d-xxl-block cir36"><img
-                                            src="/assets/images/shape/aboutThumbShape1_2.png" alt="shape" /></div>
+                                            src="/assets/images/newAssets/aboutThumbShape1_2.png" alt="shape" /></div>
                                     <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y"><img
                                             src="/assets/images/homePage/artwork_about_us-ats.png" alt="shape" /></div>
                                     <div className="thumbShape4 d-none d-xxl-block cir36"><img
-                                            src="/assets/images/shape/aboutThumbShape1_4.png" alt="shape" /></div>
+                                            src="/assets/images/newAssets/aboutThumbShape1_4.png" alt="shape" /></div>
                                     <div className="main-thumb">
                                         <img src={img1} alt="thumb" />
                                     </div>
